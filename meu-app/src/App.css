@@ -1,6 +1,6 @@
 html {
-  background: #018ded
-    url(https://images.unsplash.com/photo-1439777723962-200c3f5b294e);
+  background: #111111
+    url(https://i.pinimg.com/originals/fc/d2/8b/fcd28b38c1f4cceaf22fdc3641e50928.jpg);
   background-size: cover;
   font-family: 'helvetica neue';
   text-align: center;
@@ -8,6 +8,8 @@ html {
   overflow-y: scroll;
   width: 100%;
   height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 html,
@@ -15,7 +17,6 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  overflow-x: hidden;
 }
 
 body {
@@ -25,6 +26,7 @@ body {
 
 * {
   box-sizing: border-box;
+
 }
 
 #header {
@@ -34,6 +36,8 @@ body {
   align-items: center;
   direction: flex;
   flex-direction: row;
+  background-color: #11111191;
+  color: white;
 }
 
 h3 {
@@ -48,51 +52,70 @@ h3:before {
   display: block;
   content: '';
   height: 10px;
-  background: linear-gradient(to left, #018ded, transparent);
+  background: linear-gradient(to left, #cc2822, transparent);
 }
 h3:after {
   display: block;
   content: '';
   height: 10px;
-  background: linear-gradient(to right, #018ded, transparent);
+  background: linear-gradient(to right, #cc2822, transparent);
 }
 
 h1,
 h3 {
-  font-family: sans-serif;
+  font-family: monospace;
   text-align: center;
 }
 
 form {
   padding: 1rem;
+  background-color: #11111191;
 }
 
 table {
   width: 100%;
+  background-color: #11111191;
+  color: white;
 }
 
 th {
   text-align: center;
   border: 1px solid black;
-  background: #018ded;
+  background: #cc2822;
 }
 
 tr {
   border: 1px solid black;
 }
 
+td{
+  background-color: rgba(255, 255, 255, 0.342) ;
+  color: black;
+  
+}
+
 .search {
-  height: 5rem;
+  height: 4rem;
 }
 
 input.search {
-  height: 5rem;
+  height: 8rem;
+  border: black solid 3px;
 }
 
 img {
   height: 200px;
-  width: 150px;
+  width: 180px;
+  border: black solid 3px;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
 }
+
+img:hover {
+  transform: scale(1.1); 
+  cursor: pointer;
+}
+
 tr {
   border: 1px solid black;
   margin: 5rem;
